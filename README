@@ -1,0 +1,11 @@
+JAirPort - A Java-Airplay Server based on the fantastic work done by James Laird (http://mafipulation.org/) and others (see LICENSE)
+
+It is currently in a very alphay-state, in which only straight playback of received packets work. 
+There's no checking order/rerequesting packets/volume control/etc right now, but this will be added soon.
+
+As I'm not sure about the legal implications of providing the private key, it is not included - you can get it
+from shairport or extract it from your router though. It has to be converted to the pk8 format by:
+openssl pkcs8 -inform pem -outform der -topk8 -nocrypt -in key.pem -out key.pk8
+
+
+This software is released under the Apache Software License 2.0 (see LICENSE)
